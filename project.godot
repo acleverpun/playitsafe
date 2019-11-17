@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Play It Safe"
+run/main_scene="res://src/states/main.tscn"
 config/icon="res://icon.png"
 
 [display]
