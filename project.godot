@@ -19,10 +19,6 @@ config/name="Play It Safe"
 run/main_scene="res://src/states/main.tscn"
 config/icon="res://icon.png"
 
-[display]
-
-window/size/fullscreen=true
-
 [input]
 
 game.close={
