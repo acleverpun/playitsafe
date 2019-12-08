@@ -6,8 +6,6 @@ export var zoneList = [
 	"lobby",
 ]
 
-onready var _zones = $"/root/main/zones"
-
 func _ready():
 	print("zone manager ready")
 
@@ -29,5 +27,5 @@ func switch(index):
 	zonePtr = index
 
 	var Zone = load("res://src/zones/" + zoneList[index] + ".tscn")
-	if _zones.get_child_count() > 0: _zones.get_child(0).queue_free()
-	_zones.add_child(Zone.instance())
+	if get_child_count() > 0: get_child(0).queue_free()
+	add_child(Zone.instance())
