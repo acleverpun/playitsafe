@@ -23,7 +23,6 @@ func next():
 
 func switch(index):
 	printt("Switching to:", zonePtr, index, zoneList[index])
-	var isFirst = zonePtr == -1
 	zonePtr = index
 
 	var Zone = load("res://src/zones/" + zoneList[index] + ".tscn")
